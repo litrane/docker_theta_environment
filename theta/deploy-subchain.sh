@@ -1,8 +1,10 @@
 #!/bin/bash
 
-host_string=(" -p 22 pzl97@apt159.apt.emulab.net" " -p 22 pzl97@apt162.apt.emulab.net" " -p 22 pzl97@apt161.apt.emulab.net" " -p 22 pzl97@apt158.apt.emulab.net")
+#host_string=(" -p 22 pzl97@apt159.apt.emulab.net" " -p 22 pzl97@apt162.apt.emulab.net" " -p 22 pzl97@apt161.apt.emulab.net" " -p 22 pzl97@apt158.apt.emulab.net")
+host_string=(" root@10.10.1.5" " root@10.10.1.6" " root@10.10.1.7" " root@10.10.1.8" )
+
 name="deploy-theta2"
-0
+
 if [ "$1" == "connect" ]; then 
   tmux new-session -s $name -d
 fi 
