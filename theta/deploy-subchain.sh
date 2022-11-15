@@ -25,7 +25,7 @@ elif [ "$1" == "init" ]; then
 elif [ "$1" == "start" ]; then
   tmux send -t $tmux_name "cd theta" Enter
   tmux send -t $tmux_name "nohup ./theta-eth-rpc-adaptor start --config=./thetasub_eth_rpc_adaptor  > output 2>&1 &  " Enter
-  tmux send -t $tmux_name "./thetasubchain start --config=./allsubchains/DSN_360777/node${val}/ --password=qwe " Enter
+  tmux send -t $tmux_name "./thetasubchain start --config=./allsubchains/DSN_360001/node${val}/ --password=qwe " Enter
 elif [ "$1" == "update" ]; then
   #tmux send -t $tmux_name "cd theta_experiment_file" Enter
   tmux send -t $tmux_name "git clean -xfd" Enter
