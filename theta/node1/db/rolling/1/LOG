@@ -1,6 +1,25 @@
-=============== Nov 8, 2022 (CST) ===============
-15:06:31.853882 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:06:32.060305 db@open opening
-15:06:32.064592 version@stat F·[] S·0B[] Sc·[]
-15:06:32.172160 db@janitor F·2 G·0
-15:06:32.172841 db@open done T·112.4178ms
+=============== Nov 9, 2022 (CST) ===============
+10:27:02.128065 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:27:02.206166 db@open opening
+10:27:02.228171 version@stat F·[] S·0B[] Sc·[]
+10:27:02.286240 db@janitor F·2 G·0
+10:27:02.286666 db@open done T·79.748548ms
+=============== Nov 13, 2022 (CST) ===============
+20:44:23.126150 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:44:23.134338 version@stat F·[] S·0B[] Sc·[]
+20:44:23.148113 db@open opening
+20:44:23.148450 journal@recovery F·1
+20:44:23.160918 journal@recovery recovering @1
+20:44:23.233853 memdb@flush created L0@2 N·141 S·8KiB "\x00:\xd8..\x8f\x1e\xc1,v56":"\xfb\xa1q..%\x8eR,v52"
+20:44:23.272225 version@stat F·[1] S·8KiB[8KiB] Sc·[0.25]
+20:44:23.364661 db@janitor F·3 G·0
+20:44:23.364875 db@open done T·216.709353ms
+=============== Nov 16, 2022 (CST) ===============
+19:34:20.551958 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:34:20.582086 version@stat F·[1] S·8KiB[8KiB] Sc·[0.25]
+19:34:20.593398 db@open opening
+19:34:20.593587 journal@recovery F·1
+19:34:20.625139 journal@recovery recovering @3
+19:34:20.674778 version@stat F·[1] S·8KiB[8KiB] Sc·[0.25]
+19:34:20.746397 db@janitor F·3 G·0
+19:34:20.752356 db@open done T·158.928467ms

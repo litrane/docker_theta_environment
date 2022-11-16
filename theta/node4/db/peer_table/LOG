@@ -1,6 +1,26 @@
-=============== Nov 8, 2022 (CST) ===============
-15:06:32.620081 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:06:32.713426 db@open opening
-15:06:32.746525 version@stat F·[] S·0B[] Sc·[]
-15:06:32.792222 db@janitor F·2 G·0
-15:06:32.792266 db@open done T·78.294803ms
+=============== Nov 9, 2022 (CST) ===============
+10:27:03.006732 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:27:03.046424 db@open opening
+10:27:03.071493 version@stat F·[] S·0B[] Sc·[]
+10:27:03.138203 db@janitor F·2 G·0
+10:27:03.138441 db@open done T·91.614278ms
+=============== Nov 13, 2022 (CST) ===============
+20:44:23.355504 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:44:23.365797 version@stat F·[] S·0B[] Sc·[]
+20:44:23.381303 db@open opening
+20:44:23.381547 journal@recovery F·1
+20:44:23.414269 journal@recovery recovering @1
+20:44:23.427202 memdb@flush created L0@2 N·6 S·250B "p2pPeer,v6":"p2pPeer,v1"
+20:44:23.430258 version@stat F·[1] S·250B[250B] Sc·[0.25]
+20:44:23.515726 db@janitor F·3 G·0
+20:44:23.515788 db@open done T·134.431184ms
+=============== Nov 16, 2022 (CST) ===============
+19:34:20.944409 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:34:20.945529 version@stat F·[1] S·250B[250B] Sc·[0.25]
+19:34:20.945559 db@open opening
+19:34:20.945673 journal@recovery F·1
+19:34:20.947757 journal@recovery recovering @3
+19:34:20.993931 memdb@flush created L0@5 N·6 S·245B "p2pPeer,v13":"p2pPeer,v8"
+19:34:20.995512 version@stat F·[2] S·495B[495B] Sc·[0.50]
+19:34:21.156067 db@janitor F·4 G·0
+19:34:21.176165 db@open done T·230.5826ms

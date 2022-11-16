@@ -1,6 +1,32 @@
-=============== Nov 8, 2022 (CST) ===============
-15:06:31.329533 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:06:31.503945 db@open opening
-15:06:31.505554 version@stat F·[] S·0B[] Sc·[]
-15:06:31.583077 db@janitor F·2 G·0
-15:06:31.583735 db@open done T·79.736899ms
+=============== Nov 9, 2022 (CST) ===============
+10:27:01.651402 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:27:01.770571 db@open opening
+10:27:01.793048 version@stat F·[] S·0B[] Sc·[]
+10:27:01.916675 db@janitor F·2 G·0
+10:27:01.916962 db@open done T·145.711248ms
+=============== Nov 13, 2022 (CST) ===============
+20:44:22.020499 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:44:22.021398 version@stat F·[] S·0B[] Sc·[]
+20:44:22.021448 db@open opening
+20:44:22.021624 journal@recovery F·1
+20:44:22.022809 journal@recovery recovering @1
+20:44:22.181428 memdb@flush created L0@2 N·7657 S·1MiB "\x00H$..\xa0c\x06,v7497":"\xfe\xef\xe1..\xddz4,v2794"
+20:44:22.184434 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+20:44:22.333580 db@janitor F·3 G·0
+20:44:22.333617 db@open done T·312.146216ms
+=============== Nov 16, 2022 (CST) ===============
+19:34:19.721207 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:34:19.722039 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+19:34:19.722064 db@open opening
+19:34:19.722146 journal@recovery F·1
+19:34:19.722946 journal@recovery recovering @3
+19:34:19.857561 memdb@flush created L0@5 N·22078 S·3MiB "\x00-0..\x85\x92\xe8,v20605":"\xff\x9d\x1d..\xfd\xeb\n,v8096"
+19:34:19.859120 version@stat F·[2] S·4MiB[4MiB] Sc·[0.50]
+19:34:19.972314 db@janitor F·4 G·0
+19:34:19.980220 db@open done T·258.129404ms
+19:34:28.609548 table@compaction L0·2 -> L1·0 S·4MiB Q·29776
+19:34:28.693216 table@build created L1@8 N·3555 S·1MiB "\x00-0..\x85\x92\xe8,v20605":"\xff\x9d\x1d..\xfd\xeb\n,v8174"
+19:34:28.694053 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.01]
+19:34:28.770861 table@compaction committed F-1 S-3MiB Ke·0 D·26180 T·161.238105ms
+19:34:28.771937 table@remove removed @5
+19:34:28.772252 table@remove removed @2

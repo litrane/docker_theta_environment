@@ -1,6 +1,33 @@
-=============== Nov 8, 2022 (CST) ===============
-15:07:29.217951 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:07:29.349359 db@open opening
-15:07:29.351007 version@stat F·[] S·0B[] Sc·[]
-15:07:29.439545 db@janitor F·2 G·0
-15:07:29.439584 db@open done T·90.192623ms
+=============== Nov 9, 2022 (CST) ===============
+10:27:59.379936 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:27:59.545563 db@open opening
+10:27:59.547500 version@stat F·[] S·0B[] Sc·[]
+10:27:59.622152 db@janitor F·2 G·0
+10:27:59.622204 db@open done T·76.593652ms
+=============== Nov 13, 2022 (CST) ===============
+20:44:22.450508 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:44:22.461588 version@stat F·[] S·0B[] Sc·[]
+20:44:22.470705 db@open opening
+20:44:22.470917 journal@recovery F·1
+20:44:22.479334 journal@recovery recovering @1
+20:44:22.517327 memdb@flush created L0@2 N·460 S·118KiB "\x00!9..\xfa^\xb1,v227":"\xfd\xe3\xe5..\x15%g,v361"
+20:44:22.523858 version@stat F·[1] S·118KiB[118KiB] Sc·[0.25]
+20:44:22.598232 db@janitor F·3 G·0
+20:44:22.598267 db@open done T·127.531413ms
+=============== Nov 16, 2022 (CST) ===============
+19:34:20.173458 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:34:20.186943 version@stat F·[1] S·118KiB[118KiB] Sc·[0.25]
+19:34:20.186993 db@open opening
+19:34:20.187186 journal@recovery F·1
+19:34:20.210426 journal@recovery recovering @3
+19:34:20.330691 memdb@flush created L0@5 N·13497 S·2MiB "\x00\x11\xed..\xb9\xf9&,v3770":"\xff\xfd\xbd..\xbc\xb7\xd1,v12239"
+19:34:20.343912 version@stat F·[2] S·2MiB[2MiB] Sc·[0.50]
+19:34:20.438216 db@janitor F·4 G·0
+19:34:20.456152 db@open done T·269.127594ms
+19:34:27.607820 table@compaction L0·2 -> L1·0 S·2MiB Q·13959
+19:34:27.658492 table@build created L1@8 N·9425 S·2MiB "\x00\x11\xed..\xb9\xf9&,v3770":"\xff\xc6\x12..\x9c\xab\xe7,v7223"
+19:34:27.679076 table@build created L1@9 N·10 S·2KiB "\xff\xc8\xd9..mA?,v7713":"\xff\xfd\xbd..\xbc\xb7\xd1,v12239"
+19:34:27.679242 version@stat F·[0 2] S·2MiB[0B 2MiB] Sc·[0.00 0.02]
+19:34:27.717438 table@compaction committed F~ S-219KiB Ke·0 D·4522 T·109.42547ms
+19:34:27.718603 table@remove removed @5
+19:34:27.718847 table@remove removed @2
