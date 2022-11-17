@@ -34,7 +34,12 @@ elif [ "$1" == "update" ]; then
 elif [ "$1" == "clean" ]; then
   tmux send -t $tmux_name "cd ~" Enter
   tmux send -t $tmux_name "rm -rf docker_experiment_environent" Enter
+elif [ "$1" == "locate" ]; then
+  tmux send -t $tmux_name "cd ~/docker_theta_environment/theta" Enter
+elif [ "$1" == "stop" ]; then
+  tmux send-keys -t $tmux_name C-c
 fi
+
 
   echo "start node${val}!"
   
