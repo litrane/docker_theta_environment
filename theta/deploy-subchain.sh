@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#host_string=(" -p 22 pzl97@apt159.apt.emulab.net" " -p 22 pzl97@apt162.apt.emulab.net" " -p 22 pzl97@apt161.apt.emulab.net" " -p 22 pzl97@apt158.apt.emulab.net")
+host_string=(" -p 22 pzl97@apt159.apt.emulab.net" " -p 22 pzl97@apt163.apt.emulab.net" " -p 22 pzl97@apt154.apt.emulab.net" " -p 22 pzl97@apt161.apt.emulab.net")
 # host_string=(" root@10.10.1.5" " root@10.10.1.6" " root@10.10.1.7" " root@10.10.1.8" )
-host_string=(" -p 2205 root@127.0.0.1" " -p 2206 root@127.0.0.1" " -p 2207 root@127.0.0.1" " -p 2208 root@127.0.0.1"  )
+# host_string=(" -p 2205 root@127.0.0.1" " -p 2206 root@127.0.0.1" " -p 2207 root@127.0.0.1" " -p 2208 root@127.0.0.1"  )
 
 name="deploy-theta2"
 
