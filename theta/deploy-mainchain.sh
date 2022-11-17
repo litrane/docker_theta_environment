@@ -32,7 +32,7 @@ elif [ "$1" == "update" ]; then
   tmux send -t $tmux_name "git pull" Enter
 elif [ "$1" == "clean" ]; then
   tmux send -t $tmux_name "cd ~" Enter
-  tmux send -t $tmux_name "rm -rf docker_experiment_environent" Enter
+  tmux send -t $tmux_name "rm -rf docker_theta_environment" Enter
 elif [ "$1" == "stop" ]; then
   tmux send-keys -t $tmux_name C-c
 elif [ "$1" == "lsof" ]; then
