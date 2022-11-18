@@ -39,6 +39,11 @@ elif [ "$1" == "lsof" ]; then
   tmux send -t $tmux_name "lsof -i:16888" Enter
 elif [ "$1" == "locate" ]; then
   tmux send -t $tmux_name "cd ~/docker_theta_environment/theta" Enter
+elif [ "$1" == "reset" ]; then
+  tmux send -t $tmux_name "rm -rf ./lab34/node${val}/db" Enter
+  tmux send -t $tmux_name "cp -rf ./db_bak ./lab34/node${val}/db" Enter
+elif [ "$1" == "copy" ]; then
+  tmux send -t $tmux_name "cp -rf ./lab34/node${val}/db ./db_bak " Enter
 fi
 
   echo "start node${val}!"
