@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# host_string=(" -p 22 pzl97@apt159.apt.emulab.net" " -p 22 pzl97@apt163.apt.emulab.net" " -p 22 pzl97@apt154.apt.emulab.net" " -p 22 pzl97@apt161.apt.emulab.net")
-host_string=(" root@10.10.1.9" " root@10.10.1.10" " root@10.10.1.11" " root@10.10.1.12" )
-# host_string=(" -p 2205 root@127.0.0.1" " -p 2206 root@127.0.0.1" " -p 2207 root@127.0.0.1" " -p 2208 root@127.0.0.1"  )
+host_string=(" -p 22 pzl97@apt107.apt.emulab.net" " -p 22 pzl97@apt098.apt.emulab.net" " -p 22 pzl97@apt083.apt.emulab.net" " -p 22 pzl97@apt086.apt.emulab.net")
+# host_string=(" root@10.10.1.9" " root@10.10.1.10" " root@10.10.1.11" " root@10.10.1.12" )
+# host_string=(" -p 2209 root@127.0.0.1" " -p 2210 root@127.0.0.1" " -p 2211 root@127.0.0.1" " -p 2212 root@127.0.0.1"  )
 
-name="deploy-theta3"
+name="deploy-theta4"
 
 if [ "$1" == "connect" ]; then 
   tmux new-session -s $name -d
@@ -25,8 +25,8 @@ elif [ "$1" == "init" ]; then
   #tmux send -t $tmux_name "nohup ./earthd start --home=./workspace/earth/validator${i} > output 2>&1 & " Enter
 elif [ "$1" == "start" ]; then
   tmux send -t $tmux_name "cd theta" Enter
-  tmux send -t $tmux_name "nohup ./theta-eth-rpc-adaptor start --config=./thetasub_eth_rpc_adaptor  > output 2>&1 &  " Enter
-  tmux send -t $tmux_name "./thetasubchain start --config=./allsubchains/DSN_360888/node${val}/ --password=qwe " Enter
+  tmux send -t $tmux_name "nohup ./theta-eth-rpc-adaptor start --config=./ano_thetasub_eth_rpc_adaptor  > output 2>&1 &  " Enter
+  tmux send -t $tmux_name "./thetasubchainlab4 start --config=./allsubchains/DSN_360888/node${val}/ --password=qwe |& tee ~/node${val}.log" Enter
 elif [ "$1" == "update" ]; then
   #tmux send -t $tmux_name "cd theta_experiment_file" Enter
   tmux send -t $tmux_name "git clean -xfd" Enter

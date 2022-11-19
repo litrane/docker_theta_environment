@@ -1,0 +1,69 @@
+Using config file: /root/theta/allsubchains/DSN_360777/node1/config.yaml
+[2022-11-19 09:58:53]  INFO Log settings: map[*:info], *:info
+
+
+ ######################################################### 
+#                                                         #
+#  _    _      _ _         _______ _          _           #
+#  | |  | |    | | |       |__   __| |        | |         #
+#  | |__| | ___| | | ___      | |  | |__   ___| |_ __ _   #
+#  |  __  |/ _ \ | |/ _ \     | |  | '_ \ / _ \ __/ _` |  #
+#  | |  | |  __/ | | (_) |    | |  | | | |  __/ || (_| |  #
+#  |_|  |_|\___|_|_|\___/     |_|  |_| |_|\___|\__\__,_|  #
+#                                                         #
+#                                                         #
+ ######################################################### 
+
+
+Version 0.0.1, GitHash ac765b2d8f35c641919ccc67638dddceb36d3256
+Built at Sat Nov 19 09:55:02 UTC 2022
+
+[2022-11-19 09:59:17]  INFO [store] Allocated cache and file handles, cache: 256, handles: 16
+[2022-11-19 09:59:17]  INFO [rollingdb] Allocated cache and file handles, cache: 256, handles: 16
+[2022-11-19 09:59:17]  INFO [snapshot] Verifying snapshot: allsubchains/DSN_360777/node1/snapshot
+[2022-11-19 09:59:17]  INFO [store] Allocated cache and file handles, cache: 256, handles: 16
+[2022-11-19 09:59:17]  INFO [snapshot] Reading snapshot header, version: 1, magic: 
+[2022-11-19 09:59:17]  INFO [snapshot] Validating Snapshot, 5% done.
+[2022-11-19 09:59:17]  INFO [snapshot] Validating Snapshot, 100% done.
+[2022-11-19 09:59:17]  INFO [snapshot] Saving the the second snapshot tail block: 0xa4f7a76cd9d58dabdbd7dd1064090d2f48fdffb718c8fbdbfa8e91930c885dea
+[2022-11-19 09:59:17]  INFO [snapshot] Number of validators loaded: 4
+[2022-11-19 09:59:17]  INFO [snapshot] Validator: 0x33a027c2ac93B66987b3C8eA2Bf5bD9F19E2A004, stake: 100000000
+[2022-11-19 09:59:17]  INFO [snapshot] Validator: 0x9F1233798E905E173560071255140b4A8aBd3Ec6, stake: 100000000
+[2022-11-19 09:59:17]  INFO [snapshot] Validator: 0x9f99c71FD2cc01e748F96B74513f23050f56f564, stake: 100000000
+[2022-11-19 09:59:17]  INFO [snapshot] Validator: 0xBf244894b0C6D9c18139CDc9A86eC501bdfF6a26, stake: 100000000
+[2022-11-19 09:59:17]  INFO [snapshot] Snapshot verified.
+[2022-11-19 09:59:17]  INFO Using key address=0x9220995F674b67D05f8EBC3643833AEaFD421EC0 pubKey=0455E1140E89649B4838DB4DC6014A50CB9C5C8CD3D0F0A9545270C4FF146B1CAF6FE79183D2E4938CFF75A2DAD4DF0F7479B01C15DE19084ADC272B85FB685F13
+[2022-11-19 09:59:17]  INFO [p2p] Local network listener, ip: ::, port: 12100
+[2022-11-19 09:59:17]  INFO [p2p] Getting UPNP external address
+[2022-11-19 09:59:20]  INFO [p2p] Could not perform UPNP discover: write udp4 0.0.0.0:36709->239.255.255.250:1900: i/o timeout
+[2022-11-19 09:59:20]  INFO [blockchain] Root block is not found in chain. Adding block. Hash=0xa4f7a76cd9d58dabdbd7dd1064090d2f48fdffb718c8fbdbfa8e91930c885dea
+[2022-11-19 09:59:20]  INFO [orchestrator] subchain id is 360777
+[2022-11-19 09:59:20]  INFO [orchestrator] 360888 ip is http://10.10.1.9:19988/rpc
+[2022-11-19 09:59:20]  INFO [orchestrator] TNT20 bank address0x0000000000000000000000000000000000000000
+[2022-11-19 09:59:20]  INFO [orchestrator] hihihihi43 <nil>
+[2022-11-19 09:59:20] PANIC [orchestrator] wuhu~
+panic: (*logrus.Entry) 0xc0002193b0
+
+goroutine 1 [running]:
+github.com/sirupsen/logrus.Entry.log({0xc000114000, 0xc0003e3170, {0x0, 0x0, 0x0}, 0x0, 0x0, {0x0, 0x0}, 0x0, ...}, ...)
+	/users/pzl97/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:239 +0x2ad
+github.com/sirupsen/logrus.(*Entry).Log(0xc000400070, 0x0, {0xc0004697e8?, 0x1?, 0xc0004695b8?})
+	/users/pzl97/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:268 +0xa8
+github.com/sirupsen/logrus.(*Entry).Panic(0xc000469808?, {0xc0004697e8, 0x1, 0x1})
+	/users/pzl97/go/pkg/mod/github.com/sirupsen/logrus@v1.4.2/entry.go:306 +0x33
+github.com/thetatoken/thetasubchain/interchain/orchestrator.NewOrchestrator({0x15cb200?, 0x11e6a18?}, 0x32, 0xc000013b00, {0x15caad0?, 0xc0001ae1e0}, 0xc000014008)
+	/users/pzl97/go/src/github.com/thetatoken/thetasubchain/interchain/orchestrator/orchestrator.go:169 +0xe0c
+github.com/thetatoken/thetasubchain/node.NewNode(0xc000469cf8)
+	/users/pzl97/go/src/github.com/thetatoken/thetasubchain/node/node.go:94 +0x314
+github.com/thetatoken/thetasubchain/cmd/thetasubchain/cmd.runStart(0x1ea5d20?, {0x11d142c?, 0x2?, 0x2?})
+	/users/pzl97/go/src/github.com/thetatoken/thetasubchain/cmd/thetasubchain/cmd/start.go:151 +0xa77
+github.com/spf13/cobra.(*Command).execute(0x1ea5d20, {0xc0004840a0, 0x2, 0x2})
+	/users/pzl97/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:830 +0x663
+github.com/spf13/cobra.(*Command).ExecuteC(0x1ea5aa0)
+	/users/pzl97/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:914 +0x2ef
+github.com/spf13/cobra.(*Command).Execute(...)
+	/users/pzl97/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:864
+github.com/thetatoken/thetasubchain/cmd/thetasubchain/cmd.Execute()
+	/users/pzl97/go/src/github.com/thetatoken/thetasubchain/cmd/thetasubchain/cmd/root.go:33 +0x25
+main.main()
+	/users/pzl97/go/src/github.com/thetatoken/thetasubchain/cmd/thetasubchain/main.go:6 +0x17
