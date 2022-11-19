@@ -19,7 +19,7 @@ do
   tmux new-window -n "$i" -t "$name" -d
   tmux send -t $tmux_name "ssh ${host_string[i]}" Enter
 elif [ "$1" == "init" ]; then
-  tmux send -t $tmux_name "git clone -b lab34 https://github.com/litrane/docker_theta_environment.git" Enter
+  tmux send -t $tmux_name "git clone -b lab4_inter_subchain https://github.com/litrane/docker_theta_environment.git" Enter
   tmux send -t $tmux_name "cd docker_theta_environment" Enter
   #tmux send -t $tmux_name "nohup ./earthd start --home=./workspace/earth/validator${i} > output 2>&1 & " Enter
 elif [ "$1" == "start" ]; then
