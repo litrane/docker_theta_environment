@@ -1,6 +1,6 @@
 #!/bin/bash
 
-host_string=(" -p 22 pzl97@apt119.apt.emulab.net" " -p 22 pzl97@apt111.apt.emulab.net" " -p 22 pzl97@apt105.apt.emulab.net" " -p 22 pzl97@apt120.apt.emulab.net")
+host_string=(" -p 22 pzl97@apt147.apt.emulab.net" " -p 22 pzl97@apt145.apt.emulab.net" " -p 22 pzl97@apt153.apt.emulab.net" " -p 22 pzl97@apt158.apt.emulab.net")
 # host_string=(" root@10.10.1.9" " root@10.10.1.10" " root@10.10.1.11" " root@10.10.1.12" )
 # host_string=(" -p 2209 root@127.0.0.1" " -p 2210 root@127.0.0.1" " -p 2211 root@127.0.0.1" " -p 2212 root@127.0.0.1"  )
 
